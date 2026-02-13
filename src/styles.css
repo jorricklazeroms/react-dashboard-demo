@@ -1,0 +1,138 @@
+:root {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid #111;
+  padding: 24px 16px;
+}
+
+.sidebarTitle {
+  font-size: 1.2rem;
+  margin: 0 0 24px;
+}
+
+.sidebarNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.sidebarItem {
+  border: 1px solid #111;
+  padding: 8px 10px;
+}
+
+.mainContent {
+  padding: 24px;
+}
+
+.mainHeader h2 {
+  margin: 0 0 16px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.statCard {
+  border: 1px solid #111;
+  padding: 14px;
+}
+
+.statLabel {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.statValue {
+  margin: 8px 0 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.tableSection {
+  border: 1px solid #111;
+  padding: 12px;
+}
+
+.tableControls {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.searchInput,
+.statusSelect {
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 180px;
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #111;
+  text-align: left;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #111;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tableControls {
+    flex-direction: column;
+  }
+}
