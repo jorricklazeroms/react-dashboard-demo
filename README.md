@@ -54,11 +54,6 @@ npm run lint
 npm run build
 ```
 
-## Screenshots
-
-Add screenshots to the `screenshots/` folder and reference them here.
-
-Example:
 
 ```markdown
 ![Dashboard](./screenshots/dashboard.png)
