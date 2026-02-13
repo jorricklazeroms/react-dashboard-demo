@@ -55,6 +55,3 @@ npm run build
 ```
 
 
-```markdown
-![Dashboard](./screenshots/dashboard.png)
-```
